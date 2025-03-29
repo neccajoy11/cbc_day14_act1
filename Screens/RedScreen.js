@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Button, StyleSheet } from 'react-native';
 
-const HomeScreen = ({ navigation }) => {
+const RedScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Button title="Go to Red Screen" color="red" onPress={() => navigation.navigate('RedScreen')} />
@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     gap: 20, 
+    backgroundColor: 'red', // Ensure red background
   },
 });
 
-export default HomeScreen;
+export default RedScreen;
